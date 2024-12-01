@@ -1,0 +1,33 @@
+# EditorConfig helps developers define and maintain consistent coding styles across different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Default indentation for all files
+indent_style = space
+indent_size = 2
+
+# Set charset, end of line, etc. globally
+[*]
+charset = utf-8
+end_of_line = lf # Unix-style newlines
+insert_final_newline = true # Ensure a newline at the end of each file
+trim_trailing_whitespace = true # Remove whitespace preceding newline characters
+
+# Documentation
+
+[*.{md,mdx}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{md,mdx,txt}]
+max_line_length = 80
+
+
+# Shell Script files (for .sh extension)
+[*.sh]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
